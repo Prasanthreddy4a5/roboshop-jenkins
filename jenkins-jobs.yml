@@ -1,4 +1,5 @@
-- name: Create Jenkins Jobs        #Here we are using ansible for creating Jenkins Jobs, you can also use the other 3 ways like terraform , DSL, Jenkins CLI
+#Here we are using ansible for creating Jenkins Jobs, you can also use the other 3 ways like terraform , DSL, Jenkins CLI
+- name: Create Jenkins Jobs
   hosts: localhost
   roles:
     - jenkins
