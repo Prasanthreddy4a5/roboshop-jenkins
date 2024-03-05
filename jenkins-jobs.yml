@@ -1,4 +1,4 @@
-- name: Create Jenkins Jobs
+- name: Create Jenkins Jobs        #Here we are using ansible for creating Jenkins Jobs, you can also use the other 3 ways like terraform , DSL, Jenkins CLI
   hosts: localhost
   roles:
     - jenkins
@@ -6,8 +6,14 @@
     folders:
       - { folder_name: "CI-Pipelines" }
       - { folder_name: "Infra-Jobs" }
-
     mjobs:
       - { job_name: "cart", repo_name: "https://github.com/Prasanthreddy4a5/cart", folder_name: "CI-Pipelines" }
+      - { job_name: "catalogue", repo_name: "https://github.com/Prasanthreddy4a5/catalogue", folder_name: "CI-Pipelines" }
+      - { job_name: "user", repo_name: "https://github.com/Prasanthreddy4a5/user", folder_name: "CI-Pipelines" }
+      - { job_name: "payment", repo_name: "https://github.com/Prasanthreddy4a5/payment", folder_name: "CI-Pipelines" }
+      - { job_name: "shipping", repo_name: "https://github.com/Prasanthreddy4a5/shipping", folder_name: "CI-Pipelines" }
+      - { job_name: "frontend", repo_name: "https://github.com/Prasanthreddy4a5/frontend", folder_name: "CI-Pipelines" }
+
+
     sjobs:
       - { job_name: "roboshop-terraform", repo_name: "https://github.com/Prasanthreddy4a5/roboshop-terraform", folder_name: "Infra-Jobs" }
