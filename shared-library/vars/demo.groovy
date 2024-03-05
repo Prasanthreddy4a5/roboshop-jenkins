@@ -6,9 +6,7 @@ def warning(message) {
     echo "WARNING: ${message}"
 }
 
-
-
-def call () {
+def call() {
     pipeline {
         agent any
 
@@ -16,9 +14,9 @@ def call () {
             stage('Compile Code') {
                 steps {
                     echo 'Hello World'
-                    script{
-                        demo.info 'Starting'
-                        demo.warning 'Nothing to do!'
+                    script {
+                        info 'Starting'
+                        warning 'Nothing to do!'
                     }
                 }
             }
