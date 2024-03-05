@@ -8,6 +8,6 @@
       - { folder_name: "Infra-Jobs" }
 
     mjobs:
-      - { job_name: "cart", repo_name: "https://github.com/Prasanthreddy4a5/cart" }
+      - { job_name: "cart", repo_name: "https://github.com/Prasanthreddy4a5/cart", folder_name: "CI-Pipelines" }
     sjobs:
-      - { job_name: "roboshop-terraform", repo_name: "https://github.com/Prasanthreddy4a5/roboshop-terraform" }
+      - { job_name: "roboshop-terraform", repo_name: "https://github.com/Prasanthreddy4a5/roboshop-terraform", folder_name: "Infra-Jobs" }
