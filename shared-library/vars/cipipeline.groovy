@@ -16,6 +16,10 @@ def call() {
             }
 
             stage('Code Quality') {
+                when {
+                    expression { BRANCH_NAME == "main" }
+
+                }
                 steps {
                     echo 'Hello World'
                 }
@@ -25,14 +29,15 @@ def call() {
                 when {
                   expression { BRANCH_NAME == "main" }
                 }
-
                 steps {
+                    sh 'env'
                     echo 'Hello World'
                 }
             }
 
             stage('Release') {
                 steps {
+                    sh 'env'
                     echo 'Hello World'
                 }
             }
