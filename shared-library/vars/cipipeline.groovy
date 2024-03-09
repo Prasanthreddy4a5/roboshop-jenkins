@@ -1,6 +1,6 @@
 def call() {
 
-    node('workstation') {
+    node('all') {
         stage('Compile Code') {
             common.compile()
         }
