@@ -8,7 +8,7 @@ def compile() {
     }
 
     if (env.codetype == "python") {
-        print 'pythn'
+        print 'python'
     }
 
     if (env.codetype == "static") {
